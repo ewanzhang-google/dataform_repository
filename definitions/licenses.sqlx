@@ -1,0 +1,5 @@
+config {
+  type: "table"
+}
+
+select * from ewansproject47417.dataform.licenses

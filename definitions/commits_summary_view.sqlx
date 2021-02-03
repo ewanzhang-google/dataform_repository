@@ -1,0 +1,12 @@
+config {
+  type: "view"
+}
+
+select a.repo_name, no_of_commits, license, dominant_language from ${ref("commits_aggregated")} a
+left join ${ref("licenses")} b on a.repo_name=b.repo_name
+left join 
+(select repo_name, languagename as dominant_language from 
+(select repo_name, language.name as languagename, 
+ROW_NUMBER() OVER ( PARTITION BY repo_name ORDER BY language.bytes DESC) AS rank 
+from ${ref("languages")}, unnest(language) as language) 
+where rank=1) c on a.repo_name=c.repo_name

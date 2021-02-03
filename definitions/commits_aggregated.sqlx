@@ -1,0 +1,7 @@
+config {
+  type: "table"
+}
+
+select repo_name,count(commit) as no_of_commits
+from ${ref("sample_commits")}
+group by repo_name
