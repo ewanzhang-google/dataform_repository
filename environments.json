@@ -6,7 +6,7 @@
       "schedules": [
         {
           "name": "new_schedule",
-          "cron": "00 09 1 * *",
+          "cron": "00 13 * * *",
           "options": {
             "fullRefresh": true
           },
