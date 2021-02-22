@@ -1,1 +1,7 @@
+config {
+  type: "table",
+  tags:["test_table"],
+  description:"preview of raw data"
+}
+
 select * from ${ref("sample_commits")} limit 10

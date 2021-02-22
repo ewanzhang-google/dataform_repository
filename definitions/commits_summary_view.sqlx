@@ -1,5 +1,7 @@
 config {
-  type: "view"
+  type: "view",
+  tags:["working_view"],
+  description:"working view to reflect on the number of commits and dominant language used per repo"
 }
 
 select a.repo_name, no_of_commits, license, dominant_language from ${ref("commits_aggregated")} a

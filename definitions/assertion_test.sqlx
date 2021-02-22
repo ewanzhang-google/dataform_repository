@@ -1,5 +1,7 @@
 config {
-  type: "assertion"
+  type: "assertion",
+  tags:["quality_check"],
+  description:"quality check on raw table"
 }
 
 select * from ${ref("sample_commits")} where repo_name is null

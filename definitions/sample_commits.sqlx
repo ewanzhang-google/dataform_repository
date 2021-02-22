@@ -1,5 +1,13 @@
 config {
-  type: "table"
+  type: "table",
+  tags:["raw_table"],
+  description:"detailed stats for sample historic commits at github",
+  columns:{
+    commit:"hashed commit id",
+    subject:"rationale for commit",
+    message:"detailed context on subject",
+    repo_name:"repo name"
+  }
 }
 
 select * from ewansproject47417.dataform.sample_commits

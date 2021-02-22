@@ -1,5 +1,5 @@
 config {
-  type: "table"
+  type: "declaration",
+  schema: "dataform",
+  name: "github"
 }
-
-select * from ewansproject47417.dataform.github

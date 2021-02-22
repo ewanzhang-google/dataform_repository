@@ -1,5 +1,7 @@
 config {
-  type: "table"
+  type: "table",
+  tags:["raw_table"],
+  description:"language detail for each repo"
 }
 
 select * from ewansproject47417.dataform.languages
