@@ -1,6 +1,8 @@
 config {
-  type: "table",
-  tags:["raw_table"],
+  type: "declaration",
+  database:"ewansproject47417",
+  schema:"dataform",
+  name:"sample_commits",
   description:"detailed stats for sample historic commits at github",
   columns:{
     commit:"hashed commit id",
@@ -10,4 +12,4 @@ config {
   }
 }
 
-select * from ewansproject47417.dataform.sample_commits
+--select * from ewansproject47417.dataform.sample_commits

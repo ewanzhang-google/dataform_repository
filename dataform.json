@@ -2,5 +2,6 @@
     "warehouse": "bigquery",
     "defaultSchema": "dataform",
     "assertionSchema": "dataform_assertions",
-    "defaultDatabase": "ewansproject47417"
+    "defaultDatabase": "ewansproject47417",
+    "useRunCache": true
 }

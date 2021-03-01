@@ -1,7 +1,9 @@
 config {
-  type: "table",
-  tags:["raw_table"],
+  type: "declaration",
+  database:"ewansproject47417",
+  schema:"dataform",
+  name:"licenses",
   description:"license detail for each repo"
 }
 
-select * from ewansproject47417.dataform.licenses
+--select * from ewansproject47417.dataform.licenses
