@@ -17,10 +17,14 @@
     },
     {
       "name": "staging",
-      "gitRef": "master",
-       "configOverride": {
-        "defaultDatabase": "ewansproject47417"
-      }
+      "schedules": [
+        {
+          "name": "new_schedule",
+          "cron": "30 12 * * *",
+          "disabled": true
+        }
+      ],
+      "gitRef": "master"
     }
   ],
   "notificationChannels": [
