@@ -3,27 +3,10 @@
     {
       "name": "production",
       "configOverride": {},
-      "schedules": [
-        {
-          "name": "new_schedule",
-          "cron": "00 13 * * *",
-          "options": {
-            "fullRefresh": true
-          },
-          "disabled": false
-        }
-      ],
       "gitRef": "master"
     },
     {
       "name": "staging",
-      "schedules": [
-        {
-          "name": "new_schedule",
-          "cron": "30 12 * * *",
-          "disabled": true
-        }
-      ],
       "gitRef": "master"
     }
   ],
